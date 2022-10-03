@@ -99,7 +99,7 @@ class CameraPlugin extends CameraPlatform {
       final html.MediaStream cameraStream =
           await _cameraService.getMediaStreamForOptions(
         const CameraOptions(
-          audio: AudioConstraints(enabled: true),
+          audio: AudioConstraints(enabled: false),
         ),
       );
 
